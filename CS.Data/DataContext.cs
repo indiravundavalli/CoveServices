@@ -13,7 +13,7 @@ namespace CS.Data
         public DbSet<Roles> Roles { get; set; }
         public DbSet<Service> Services { get; set; }
 
-        public DbSet<ServiceProvider> ServiceProviders { get; set; }
+        public DbSet<ServiceProviders> ServiceProviders { get; set; }
 
     }
 }

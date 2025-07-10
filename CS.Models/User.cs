@@ -1,4 +1,6 @@
-﻿namespace CS.Models
+﻿using System.ComponentModel.DataAnnotations.Schema;
+
+namespace CS.Models
 {
     public class User
     {
@@ -10,7 +12,8 @@
         public string Email { get; set; }
 
         public int RoleId { get; set; }
-        public Roles Role { get; set; }
+        [ForeignKey("RoleId")]
+        public Roles? Role { get; set; }
 
     }
 }
